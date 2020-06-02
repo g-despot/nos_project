@@ -1,0 +1,17 @@
+---BEGIN OS2 CRYPTO DATA---
+Description:
+	Signature
+
+File Name:
+	Signature.txt
+
+Method:
+	SHA256
+	RSA 1024
+
+Signature:
+	sjPpRvLlWeMwy5b/e6qr5J9xKbLih6K+y/abEa0m+/tIh6YQlrVxIa3GxgDp
+	pqrtVjFGMss8DDSuPdoWIAaHyRnEECrW1jCm7A3TfyW3nyo0mESmgA/m1kEc
+	tJmelPR2PEzz8pxkch+rHlXT+h3nXOWAW6E6U6VPk23l2mY8tTY=
+
+---END OS2 CRYPTO DATA---

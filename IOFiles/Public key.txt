@@ -1,0 +1,15 @@
+---BEGIN OS2 CRYPTO DATA---
+Description:
+	Public key
+
+File Name:
+	Public key.txt
+
+RSA key:
+	<RSAKeyValue><Modulus>w2jzk+fTaFEfXR5wPpp2pepCYen07AMzPnE6Ji
+	xV7s/AOy72sZTAsQKQja917RYfjby8M6TsNOf1yYlgDzEJvV6sBE/iyknAMT
+	2SYd5YBk7MCMuELJGElOD+jUi2dBNdQBKBxRgMcin9T9sE+RR4Nbie+FCWZ6
+	XmZHDtCpX8yek=</Modulus><Exponent>AQAB</Exponent></RSAKeyVal
+	ue>
+
+---END OS2 CRYPTO DATA---

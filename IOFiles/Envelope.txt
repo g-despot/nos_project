@@ -1,0 +1,27 @@
+---BEGIN OS2 CRYPTO DATA---
+Description:
+	Envelope
+
+File Name:
+	Envelope.txt
+
+Method:
+	Aes 128
+	RSA 1024
+
+Cipher:
+	CBC
+
+Initialization vector:
+	7lOk/X580b4B8OYqQ5hJ6Q==
+
+Envelope data:
+	MHjuwtiI09QzQwyWxzPvLIao0OOqurD35bAab7UlrNh3BH/yX1CDhvVuMBmE
+	TtSX
+
+Envelope crypt key:
+	doUTVXO/k2W2cJ090f8p+Er+CHFZruwaa+gUPV+Rc0hnJnPL60Dckmr61tlY
+	lY19m1mh7coo+FEbBfyYccZXJe6plvj5D5F+xzIVmcku7B1SaHRFUNzS50Rt
+	SQfEP5dyRMEYc4HdTPQfaXBPOvHY7aycJxpOdye7t0E5DV+INNw=
+
+---END OS2 CRYPTO DATA---

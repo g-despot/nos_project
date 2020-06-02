@@ -1,0 +1,126 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:System="clr-namespace:System;assembly=System.Runtime" x:Class="lab2_ui.MainWindow"
+        mc:Ignorable="d"
+        Title="NOS Lab 2" Height="500" Width="1337">
+    <Grid>
+        <TabControl>
+            <TabItem Header="Digital Envelope">
+                <Grid Background="#FFE5E5E5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="431*"/>
+                        <ColumnDefinition Width="900*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBox x:Name="DEInputTextBox" HorizontalAlignment="Left" Margin="273,203,0,0" Text="Input file path" TextWrapping="Wrap" VerticalAlignment="Top" Width="421" Grid.Column="1"/>
+                    <Button x:Name="DEInputButton" Content="Select input" HorizontalAlignment="Left" Margin="722,193,0,0" VerticalAlignment="Top" Height="38" Click="DEInputButton_Click" Grid.Column="1" Width="120"/>
+
+                    <TextBlock x:Name="DEInputTextBlock" Background="White" HorizontalAlignment="Left" Height="135" Margin="25,23,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="1279" Grid.ColumnSpan="2"/>
+                    <Button Content="Generate Envelope" HorizontalAlignment="Left" Margin="25,229,0,0" VerticalAlignment="Top" Height="38" Width="140" Click="DEGenerateButton_Click"/>
+                    <ComboBox x:Name="DESymDropdown" HorizontalAlignment="Left" Height="28" Margin="236,229,0,0" VerticalAlignment="Top" Width="200" Grid.ColumnSpan="2" SelectedIndex="0">
+                        <System:String>AES 128</System:String>
+                        <System:String>AES 192</System:String>
+                        <System:String>AES 256</System:String>
+                        <System:String>TripleDES 128</System:String>
+                        <System:String>TripleDES 192</System:String>
+                    </ComboBox>
+                    <ComboBox x:Name="DERsaDropdown" HorizontalAlignment="Left" Height="28" Margin="236,294,0,0" VerticalAlignment="Top" Width="200" Grid.ColumnSpan="2" SelectedIndex="0">
+                        <System:String>RSA 1024</System:String>
+                        <System:String>RSA 2048</System:String>
+                        <System:String>RSA 3072</System:String>
+                    </ComboBox>
+                    <ComboBox x:Name="DESymTypeDropdown" HorizontalAlignment="Left" Height="28" Margin="236,358,0,0" VerticalAlignment="Top" Width="200" Grid.ColumnSpan="2" SelectedIndex="0">
+                        <System:String>CBC</System:String>
+                        <System:String>ECB</System:String>
+                    </ComboBox>
+                    <Button Name="DEDecryptButton" Content="Decrypt Envelope" HorizontalAlignment="Left" Margin="25,310,0,0" VerticalAlignment="Top" Height="38" Width="140" Click="DEDecryptButton_Click"/>
+                    <TextBox x:Name="DEInputEnvelopeTextBox" HorizontalAlignment="Left" Margin="272,266,0,0" Text="Envelope file path" TextWrapping="Wrap" VerticalAlignment="Top" Width="422" Grid.Column="1"/>
+                    <Button x:Name="DEInputEnvelopeButton" Content="Select envelope" HorizontalAlignment="Left" Margin="722,257,0,0" VerticalAlignment="Top" Height="38" Click="DESelectEnvelopeButton_Click" Grid.Column="1" Width="120"/>
+                    <TextBox x:Name="DEInputPrivateKeyTextBox" HorizontalAlignment="Left" Margin="272,330,0,0" Text="Private key file path" TextWrapping="Wrap" VerticalAlignment="Top" Width="422" Grid.Column="1"/>
+                    <Button x:Name="DEInputPrivateKeyButton" Content="Select private key" HorizontalAlignment="Left" Margin="722,321,0,0" VerticalAlignment="Top" Height="38" Click="DESelectPrivateKeyButton_Click" Grid.Column="1" Width="120"/>
+                    <TextBlock Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="24" Margin="236,203,0,0" Text="Symmetric encryption algorithm:" TextWrapping="Wrap" VerticalAlignment="Top" Width="200"/>
+                    <TextBlock Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="24" Margin="236,268,0,0" Text="Asymmetric encryption algorithm:" TextWrapping="Wrap" VerticalAlignment="Top" Width="200"/>
+                    <TextBlock Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="24" Margin="236,332,0,0" Text="Cipher mode:" TextWrapping="Wrap" VerticalAlignment="Top" Width="200"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Digital Signature">
+                <Grid Background="#FFE5E5E5">
+                    <TextBox x:Name="DSInputTextBox" HorizontalAlignment="Left" Margin="704,203,0,0" Text="Input file path" TextWrapping="Wrap" VerticalAlignment="Top" Width="421"/>
+                    <Button x:Name="DSInputButton" Content="Select input" HorizontalAlignment="Left" Margin="1153,193,0,0" VerticalAlignment="Top" Height="38" Click="DSInputButton_Click" Width="120"/>
+
+                    <TextBlock x:Name="DSInputTextBlock" Background="White" HorizontalAlignment="Left" Height="135" Margin="25,23,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="1279"/>
+                    <Button Content="Generate Signature" HorizontalAlignment="Left" Margin="25,229,0,0" VerticalAlignment="Top" Height="38" Width="140" Click="DSGenerateButton_Click"/>
+                    <ComboBox x:Name="DEHashDropdown" HorizontalAlignment="Left" Height="28" Margin="236,229,0,0" VerticalAlignment="Top" Width="200"  SelectedIndex="0">
+                        <System:String>SHA256</System:String>
+                        <System:String>SHA384</System:String>
+                        <System:String>SHA512</System:String>
+                    </ComboBox>
+                    <ComboBox x:Name="DSRsaDropdown" HorizontalAlignment="Left" Height="28" Margin="236,294,0,0" VerticalAlignment="Top" Width="200" SelectedIndex="0">
+                        <System:String>RSA 1024</System:String>
+                        <System:String>RSA 2048</System:String>
+                        <System:String>RSA 3072</System:String>
+                    </ComboBox>
+                    <Button x:Name="DSAuthenticateButton" Content="Authenticate Signature" HorizontalAlignment="Left" Margin="26,310,0,0" VerticalAlignment="Top" Height="38" Width="139" Click="DSAuthenticateButton_Click"/>
+                    <TextBox x:Name="DSInputSignatureTextBox" HorizontalAlignment="Left" Margin="703,266,0,0" Text="Signature file path" TextWrapping="Wrap" VerticalAlignment="Top" Width="422" />
+                    <Button x:Name="DSInputSignatureButton" Content="Select signature" HorizontalAlignment="Left" Margin="1153,257,0,0" VerticalAlignment="Top" Height="38" Click="DSInputSignatureButton_Click" Width="120"/>
+                    <TextBlock HorizontalAlignment="Left" Height="24" Margin="236,203,0,0" Text="Hash algorithm:" TextWrapping="Wrap" VerticalAlignment="Top" Width="200"/>
+                    <TextBlock HorizontalAlignment="Left" Height="24" Margin="236,268,0,0" Text="Asymmetric encryption algorithm:" TextWrapping="Wrap" VerticalAlignment="Top" Width="200"/>
+                    <TextBox x:Name="DSInputPublicKeyTextBox" HorizontalAlignment="Left" Margin="703,330,0,0" Text="Public key file path" TextWrapping="Wrap" VerticalAlignment="Top" Width="422"/>
+                    <Button x:Name="DSPublicKeyButton" Content="Select public key" HorizontalAlignment="Left" Margin="1153,321,0,0" VerticalAlignment="Top" Height="38" Click="DSPublicKeyButton_Click" Width="120"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Digital Certificate" Margin="-2,-2,-2,0">
+                <Grid Background="#FFE5E5E5">
+                    <TextBox x:Name="DCInputTextBox" HorizontalAlignment="Left" Margin="721,33,0,0" Text="Input file path" TextWrapping="Wrap" VerticalAlignment="Top" Width="421"/>
+                    <Button x:Name="DCInputButton" Content="Select input" HorizontalAlignment="Left" Margin="1170,23,0,0" VerticalAlignment="Top" Height="38" Click="DCInputButton_Click" Width="120"/>
+
+                    <TextBlock x:Name="DCInputTextBlock" Background="White" HorizontalAlignment="Left" Height="135" Margin="25,23,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="639"/>
+                    <Button Content="Generate Certificate" HorizontalAlignment="Left" Margin="25,229,0,0" VerticalAlignment="Top" Height="38" Width="140" Click="DCGenerateCertificateButton_Click"/>
+                    <ComboBox x:Name="DCSignatureHashDropdown" HorizontalAlignment="Left" Height="28" Margin="236,229,0,0" VerticalAlignment="Top" Width="200" SelectedIndex="0">
+                        <System:String>SHA256</System:String>
+                        <System:String>SHA384</System:String>
+                        <System:String>SHA512</System:String>
+                    </ComboBox>
+                    <ComboBox x:Name="DCSignatureRsaDropdown" HorizontalAlignment="Left" Height="28" Margin="236,297,0,0" VerticalAlignment="Top" Width="200" SelectedIndex="0">
+                        <System:String>RSA 1024</System:String>
+                        <System:String>RSA 2048</System:String>
+                        <System:String>RSA 3072</System:String>
+                    </ComboBox>
+                    <Button x:Name="DCAuthenticateButton" Content="Authenticate Certificate" HorizontalAlignment="Left" Margin="25,310,0,0" VerticalAlignment="Top" Height="38" Width="140" Click="DCAuthenticateCertificateButton_Click"/>
+                    <TextBox x:Name="DCInputSignatureTextBox" HorizontalAlignment="Left" Margin="720,109,0,0" Text="Signature file path" TextWrapping="Wrap" VerticalAlignment="Top" Width="422"/>
+                    <Button x:Name="DCInputSignatureButton" Content="Select signature" HorizontalAlignment="Left" Margin="1170,100,0,0" VerticalAlignment="Top" Height="38" Click="DCInputSignatureButton_Click" Width="120"/>
+                    <TextBlock HorizontalAlignment="Left" Height="24" Margin="236,203,0,0" Text="Signature hash algorithm:" TextWrapping="Wrap" VerticalAlignment="Top" Width="200"/>
+                    <TextBlock HorizontalAlignment="Left" Height="33" Margin="236,262,0,0" Text="Signature asymmetric encryption algorithm:" TextWrapping="Wrap" VerticalAlignment="Top" Width="200"/>
+                    <TextBox x:Name="DCInputSignaturePublicKeyTextBox" HorizontalAlignment="Left" Margin="720,271,0,0" Text="Signature public key file path" TextWrapping="Wrap" VerticalAlignment="Top" Width="422"/>
+                    <Button x:Name="DCInputSignaturePublicKeyButton" Content="Select public key" HorizontalAlignment="Left" Margin="1170,262,0,0" VerticalAlignment="Top" Height="38" Click="DCSignaturePublicKeyButton_Click" Width="120"/>
+                    <ComboBox x:Name="DCEnvelopeSymDropdown" HorizontalAlignment="Left" Height="28" Margin="464,229,0,0" VerticalAlignment="Top" Width="200"  SelectedIndex="0">
+                        <System:String>AES 128</System:String>
+                        <System:String>AES 192</System:String>
+                        <System:String>AES 256</System:String>
+                        <System:String>TripleDES 128</System:String>
+                        <System:String>TripleDES 192</System:String>
+                    </ComboBox>
+                    <ComboBox x:Name="DCEnvelopeRsaDropdown" HorizontalAlignment="Left" Height="28" Margin="464,297,0,0" VerticalAlignment="Top" Width="200" SelectedIndex="0">
+                        <System:String>RSA 1024</System:String>
+                        <System:String>RSA 2048</System:String>
+                        <System:String>RSA 3072</System:String>
+                    </ComboBox>
+                    <ComboBox x:Name="DCEnvelopeCipherDropdown" HorizontalAlignment="Left" Height="28" Margin="464,358,0,0" VerticalAlignment="Top" Width="200" SelectedIndex="0">
+                        <System:String>CBC</System:String>
+                        <System:String>ECB</System:String>
+                    </ComboBox>
+                    <TextBlock HorizontalAlignment="Left" Height="34" Margin="464,193,0,0" Text="Envelope symmetric encryption algorithm:" TextWrapping="Wrap" VerticalAlignment="Top" Width="200"/>
+                    <TextBlock HorizontalAlignment="Left" Height="33" Margin="464,262,0,0" Text="Envelope asymmetric encryption algorithm:" TextWrapping="Wrap" VerticalAlignment="Top" Width="200"/>
+                    <TextBlock HorizontalAlignment="Left" Height="24" Margin="464,332,0,0" Text="Envelope cipher mode:" TextWrapping="Wrap" VerticalAlignment="Top" Width="200"/>
+                    <TextBox x:Name="DCInputEnvelopeTextBox" HorizontalAlignment="Left" Margin="720,189,0,0" Text="Envelope file path" TextWrapping="Wrap" VerticalAlignment="Top" Width="422"/>
+                    <Button x:Name="DCInputEnvelopeButton" Content="Select Envelope" HorizontalAlignment="Left" Margin="1170,180,0,0" VerticalAlignment="Top" Height="38" Click="DCInputEnvelopeButton_Click" Width="120"/>
+                    <TextBox x:Name="DCInputEnvelopePrivateKeyTextBox" HorizontalAlignment="Left" Margin="720,349,0,0" Text="Envelope private key file path" TextWrapping="Wrap" VerticalAlignment="Top" Width="422"/>
+                    <Button x:Name="DCEnvelopePrivateKeyButton" Content="Select private key" HorizontalAlignment="Left" Margin="1170,340,0,0" VerticalAlignment="Top" Height="38" Click="DCEnvelopePrivateKeyButton_Click" Width="120"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>

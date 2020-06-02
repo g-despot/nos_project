@@ -1,0 +1,12 @@
+C:\Users\chopper\source\repos\nos_project\lab2_code\obj\Debug\netcoreapp3.1\lab2_code.csproj.CoreCompileInputs.cache
+C:\Users\chopper\source\repos\nos_project\lab2_code\obj\Debug\netcoreapp3.1\lab2_code.AssemblyInfoInputs.cache
+C:\Users\chopper\source\repos\nos_project\lab2_code\obj\Debug\netcoreapp3.1\lab2_code.AssemblyInfo.cs
+C:\Users\chopper\source\repos\nos_project\lab2_code\bin\Debug\netcoreapp3.1\lab2_code.exe
+C:\Users\chopper\source\repos\nos_project\lab2_code\bin\Debug\netcoreapp3.1\lab2_code.deps.json
+C:\Users\chopper\source\repos\nos_project\lab2_code\bin\Debug\netcoreapp3.1\lab2_code.runtimeconfig.json
+C:\Users\chopper\source\repos\nos_project\lab2_code\bin\Debug\netcoreapp3.1\lab2_code.runtimeconfig.dev.json
+C:\Users\chopper\source\repos\nos_project\lab2_code\bin\Debug\netcoreapp3.1\lab2_code.dll
+C:\Users\chopper\source\repos\nos_project\lab2_code\bin\Debug\netcoreapp3.1\lab2_code.pdb
+C:\Users\chopper\source\repos\nos_project\lab2_code\obj\Debug\netcoreapp3.1\lab2_code.dll
+C:\Users\chopper\source\repos\nos_project\lab2_code\obj\Debug\netcoreapp3.1\lab2_code.pdb
+C:\Users\chopper\source\repos\nos_project\lab2_code\obj\Debug\netcoreapp3.1\lab2_code.genruntimeconfig.cache

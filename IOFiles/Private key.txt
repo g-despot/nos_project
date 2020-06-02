@@ -1,0 +1,26 @@
+---BEGIN OS2 CRYPTO DATA---
+Description:
+	Private key
+
+File Name:
+	Private key.txt
+
+RSA key:
+	<RSAKeyValue><Modulus>xy5DVul1PNLl56QIzEviL2v+mc02sbfK4gMa4c
+	yu2Od6EwdUXZBEWXVv6JGlIfnXPRbCBWmTM0k3KzFnV4cRXwS2Ilypt69AGn
+	fMllq/X5NRchesgRlec3qUbY6zsjN4jYMSxCHo2xpLlIpKSI8yqUA3UZE2xp
+	lcjQ1FMwXwAp0=</Modulus><Exponent>AQAB</Exponent><P>5aGPthjx
+	VfTGAvQ/Wd+ewRIRCfetEKwj7jiWhz6H4wv34Fhz5asQWWZ3vyH0wIHxDdsq
+	IEjDhHJA7KOz52XRRw==</P><Q>3g2OJx1Ei6P3vXJ5/+ylgxPNwACcM01Ew
+	MSg5gVFEJDTlZTAgou5aRPWEPbMxn3hDNqXPh5KIu856H2iy36e+w==</Q><
+	DP>4T6J9kgfKn6QYMNvBNxqH9514j4Vf94q3HibhwwaROcvfNumy6jxv4/Yd
+	B59svuDFWFewA4/4sIj1zt4s8lW7w==</DP><DQ>KFqCSO1ytYXY0d7p+O6C
+	ra19qLTzrgcOxZF2RBcVFAudyAM+cPr/eO8X6gFP+YqKyZE4BxvuESc0eOHM
+	Ifsi3Q==</DQ><InverseQ>EC8W2xJoVmcFfDeoOdPidtUe6mvRIl6yLyIBZ
+	oggSjeGvbOPR/8cdP9QxguYp/pFhHNOIgUn1jNHs5TC4ozswg==</Inverse
+	Q><D>aJzWx24kokaOc8RGzq5IZOnOtg7/XAYRK/W/h7rOVqP1DMt7twyPqYC
+	xvy/H0Hl9X9t1GgyiQHyC2k+/XExXhWgi/GzISPOvpFW6zYGzLbO+Ska0keK
+	liC74A3k6YOjSTjBDeyJn8Q3zn7cpTiezNCbBzu+xBA0r9hzAUPbZDA0=</D
+	></RSAKeyValue>
+
+---END OS2 CRYPTO DATA---
